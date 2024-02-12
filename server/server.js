@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import db from '../../../config.js';
+import db from '../config.js';
  // Importing Firebase Firestore instance
 
 const app = express();
@@ -377,8 +377,6 @@ app.put('/returnBook/:DeweyDec', async (req, res) => {
     }
 });
 
-// app.listen(5000, () => {
-//     console.log("Server started on port 5000");
-// })
-
-export default app;
+app.listen(5000, () => {
+    console.log("Server started on port 5000");
+})
